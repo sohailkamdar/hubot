@@ -34,9 +34,8 @@ module.exports = function(robot) {
     return msg.send("Hi there!");
   });
 }
-//   /* Random Example
-//   If a user enters 'ship it' we return a random squirrel, which is popular for symbolizing shipping something with engineers */
-//   return robot.hear(/ship it/i, function(msg) {
-//     return msg.send(msg.random(squirrels));
-//   });
+  robot.respond(/what is the time/i, function(msg){
+    let when = new Date()
+    return msg.send(when)
+  });
 // };
