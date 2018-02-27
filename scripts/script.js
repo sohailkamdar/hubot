@@ -36,6 +36,6 @@ module.exports = function(robot) {
 }
   robot.respond(/what is the time/i, function(msg){
     let when = new Date()
-    return msg.send(when)
+    return msg.send(when.toLocaleTimeString('en-US'))
   });
 // };
