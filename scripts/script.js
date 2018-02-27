@@ -10,13 +10,13 @@
 // Commands:
 //
 
-// module.exports = function(robot) {
-//   //  YOUR CODE HERE
-//   //  Example
-//    robot.hear(/javascript/i, function(msg) {
-//      return msg.send("I love writing code!");
-//    });
-// }
+module.exports = function(robot) {
+  //  YOUR CODE HERE
+  //  Example
+   robot.hear(/javascript/i, function(msg) {
+     return msg.send("I love writing code!");
+   });
+}
 
 /************************************
 
@@ -31,7 +31,7 @@ EXAMPLES OF THE KEY HUBOT FUNCTIONS
 module.exports = function(robot) {
   /* Basic example of respond / send. If the user enters hi or hello the bot responds "Howdy!" */
   robot.hear(/hi|hello/i, function(msg) {
-    return msg.send("Howdy!");
+    return msg.send("Hi there!");
   });
 }
 //   /* Random Example
