@@ -57,7 +57,7 @@
 // }
 
 module.exports = function(robot) {
-  let pantry = ['apple','chips', 'crackers', 'popcorn', 'cereal','chocolate','bananas']
+  pantry =['apple','chips', 'crackers', 'popcorn', 'cereal','chocolate','bananas']
   robot.respond(/bought a (.*) for the pantry/i, function(msg){
     let newFood = msg.match[1]
     pantry.push()
@@ -84,5 +84,15 @@ module.exports = function(robot) {
       array.splice(index, 1)
     }
     return msg.send('removing '+ foodEaten+ ' from the pantry')
+  })
+  robot.hear(/food/i,function(msg){
+    let food = pantry[Math.floor(Math.random() * pantry.length)]
+    let foodIndex = pantry.indexOf(food)
+    if (foodIndex > -1){
+      array.splice(index, 1)
+      return msg.send('Are you hungry? you should eat a '+ food)
+    }else{
+      return msg.send('By the way, There is nothing in the pantry! Go Shopping')
+    }
   })
 }
