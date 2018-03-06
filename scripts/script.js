@@ -68,11 +68,13 @@ module.exports = function(robot) {
     let foodIndex = pantry.indexOf(food)
     if (foodIndex > -1){
       array.splice(index, 1)
+      return msg.send('Here is a'+ food)
+    }else{
+      return msg.send('There is nothing in the pantry! Go Shopping')
     }
-    return msg.send('Here is a'+ food)
+    
   }),
   robot.respond(/what is in the pantry/i, function(msg){
-     
     return msg.send('You have: ' + pantry.toString())
   }),
   robot.respond(/I ate a (.*)/i, function(msg){
