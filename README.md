@@ -4,8 +4,11 @@
 snottybot will help you in times of hunger by telling you what is in the pantry. You can eat items, by telling ‘@snottybot get me a snack’ and fill your pantry with ‘@snottybot, I bought a ____ for the pantry’. Your pantry pal will even remind you to eat when you mention the word food!
 
 snottybot will respond to 
-what is in the pantry = list of 
-get me a snack
+what is in the pantry = list of things inthe pantry (broken)
+get me a snack = gets you a random snack
+bought a (snack) for the pantry = tell you what snack you are adding to the pantry but doesnt actually add anything
+I ate a ____ = removes snack from pantry (broken) and tells you what you ate
+hears (food) = tells you to eat something!
 
 Unfortunately, I don’t think the hub actually saves Items in the pantry, I am not super sure how to do this. Something to do with a brain, but I couldn’t really get that to work.
 
