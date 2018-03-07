@@ -2,7 +2,6 @@
 //   let trigger = /(?:eta)(?: to)? (.*) (?: from)? (.*)? (?:by) (.*)/i;
 
 //   robot.respond(trigger, function(res){
-//     const key = "AIzaSyAR_br69wgTxLYgKh4I34HJTTNvi8tUABg";
     // let origins = res.match[1];
     // origins = origins.split(' ').join('+');
     // let destination = res.match[2];
